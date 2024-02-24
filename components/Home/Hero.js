@@ -1,17 +1,32 @@
 import React from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import BADGE_KODEMIA from '@/public/assets/icons/badge-kodemia.png'
+import IMG_JONATAN from '@/public/assets/home/jonatan2-SF 1.png'
 
-export default function Hero () {
+export default function Hero() {
   return (
     <section className='container-fluid hero'>
       <div className='row'>
-        <article className='col-lg-6'>
-          <h1 className='hero__title'>hey there Noe</h1>
-          <a href='https://mail.google.com/mail/u/0/#inbox?compose=new' className='d-none d-lg-block hero__email'>noe.flores.code@gmail.com</a>
-        </article>
+        <section className='col-lg-6'>
+          <h1 className='hero__title'>Hey There, I’m Jonatan</h1>
+          <Link href='/' className='d-none d-lg-block hero__email'>jonatanare.dev@gmail.com</Link>
+          <div className='hero__experiencies'>
+            <strong>3</strong>
+            <p>Years Experiences</p>
+          </div>
+        </section>
+        <section className='col-lg-6 position-relative'>
+          <p className='hero__subtitle'>I design beautifully simple things, <br /> And I love what i do</p>
+          <figure className='hero__badge p-0'>
+            <Image src={BADGE_KODEMIA} alt='Badge Kodemia' />
+          </figure>
+          <div className='mx-auto'>
+            <Image src={IMG_JONATAN} width={300} height={430} alt='Foto Jonatan' className='hero__photo mx-auto' />
 
-        <article className='col-lg-6'>
-          <p>esto body</p>
-        </article>
+          </div>
+          <p className='d-none d-md-block'>FullStack JavaScript Developer</p>
+        </section>
       </div>
     </section>
   )

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Footer() {
+export default function Footer () {
   return (
     <section className='container-flex  footer text'>
-      <div className="">
+      <div>
         hola
       </div>
     </section>
