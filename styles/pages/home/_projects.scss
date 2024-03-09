@@ -1,0 +1,138 @@
+.projects {
+    padding-top: 41px;
+    padding-bottom: 76px;
+    background-color: #FF8B4A;
+
+    &__title {
+        color: #000;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-left: 18px;
+        
+        @include responsive($md) {
+            font-size: 70px;
+            margin-left: 101px;
+
+
+        }
+
+    }
+
+    &__subtitle {
+        color: #000;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 32px;
+        margin-left: 18px;
+
+        @include responsive($md) {
+            font-size: 20px;
+            margin-left: 101px;
+
+        }
+
+    }
+
+    &__explore {
+        color: #FF8B4A;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+        margin: 60px 90px 0px 0px ;
+        text-decoration-line: underline;
+    }
+
+    &__swiper {
+        .swiper-wrapper {
+            padding-left: 13px;
+            margin-bottom: 76px;
+
+            @include responsive($md) {
+                padding-left: 30px;
+            }
+
+            @include responsive($lg) {
+                padding-left: 96px;
+            }
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+
+            @include responsive($md) {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        width: 240px;
+        height: 240px;
+        padding: 20px 16px;
+        border-radius: 21px;
+        box-shadow: 18.337px 7.551px 29.124px 0px rgba(0, 0, 0, 0.12);
+
+        @include responsive($md) {
+            width: 345px;
+            height: 345px;    
+        }
+
+        @include responsive($lg) {
+            width: 395px;
+            height: 445px;
+        }
+
+        &-title {
+            color: #FFF;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 4px;
+
+            @include responsive($md) {
+                font-size: 40px;
+                padding-left: 30px;
+            }
+
+        }
+
+        &-subtitle {
+            color: #FFF;
+            font-size: 10.787px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 0px;
+
+            @include responsive($md) {
+                font-size: 20px;
+                padding-left: 30px;
+
+            }
+        }
+
+        &-img {
+            width: 200px;
+            height: 170px;
+
+            @include responsive($md) {
+                width: 250px;
+                height: 220px;
+            }
+
+            @include responsive($lg) {
+                width: 400px;
+                height: 350px;
+            }
+        }
+
+    }
+}

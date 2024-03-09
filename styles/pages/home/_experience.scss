@@ -1,3 +1,70 @@
-.experience{
-    background-color: aqua;
+.experience {
+    background-color: #F8F7F1 ;
+
+    &__title {
+        text-align: center;
+        color: #000;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 16px;
+
+        @include responsive ($md) {
+            font-size: 70px;
+        }
+
+
+    }
+
+   
+
+    &__timeline {
+        
+        &-wrapper-squere {
+            width: 36px;
+            height: 36px;
+            border: 1px dashed black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            &-icons {
+                width: 12px;
+                height: 12px;
+                background-color: #1E7436;
+                border-radius: 50%;
+                
+            }
+        }
+
+        &-divisor{
+            
+            width: 1px;
+            height: 176px;
+            border: 1px dashed black;
+            
+
+        }  
+    }
+
+    &__position {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        
+    }
+
+    &__name {
+        color: #000;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        
+
+    }
+
 }
