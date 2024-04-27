@@ -7,18 +7,101 @@
     height: 730px;
     overflow: hidden;
 
+    @include responsive($md) {
+        display: flex;
+        position: relative;
+        background: url(/assets/home/bg-yellow-sm.svg), linear-gradient(180deg, #F8F7F2 0%, rgba(248, 247, 241, 0.00) 100%);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        z-index: -2;
+        height: 890px;
+        overflow: hidden;
+    }
+
+    @include responsive($xl) {
+        position: relative;
+        background: url(/assets/home/bg-yellow-large.webp), linear-gradient(180deg, #F8F7F2 0%, rgba(248, 247, 241, 0.00) 100%);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        z-index: -2;
+        height: 980px;
+
+        overflow: hidden;
+    }
+
     &__badge {
         position: absolute;
-        width: 97px;
-        height: 97px;
-        right: 30px;
-        top: 70;
+        top: 10;
+        right: 10px;
+        z-index: 3;
+
+        @include responsive($md) {
+            position: absolute;
+            width: 97px;
+            right: 50px;
+
+        }
+
+        @include responsive($xl) {
+            position: absolute;
+            width: 97px;
+            height: 97px;
+
+        }
 
         img {
             width: 100%;
             height: 100%;
         }
+
+       
     }
+
+  
+
+    &__wrap {
+        position: absolute;
+        z-index: 2;
+        right: 10px;
+        padding-right: 10px;
+
+        @include responsive($md) {
+            padding-top: 0px;
+            width: fit-content;
+            right: 220px;
+        }
+        @include responsive($lg) {
+            padding-top: 400px;
+            width: fit-content;
+            right: 470px;
+            padding-right: 10px;
+
+        }
+        @include responsive($xl) {
+            padding-top: 0px;
+            width: fit-content;
+            right: 420px;
+            padding-right: 0px;
+        }
+
+        &-photo {
+            padding-top: 50px;
+            width: 250px;
+            height: 475px;
+    
+            @include responsive($md) {
+                margin-top: 0px;
+            }
+            @include responsive($xl) {
+                margin-top: 0px;
+                width: 480px;
+                height: 550px;
+            }
+    
+        }
+    }
+    
+    
 
     &__title {
         color: #000;
@@ -27,23 +110,35 @@
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-top: 50;
-        margin-bottom: 17;
-    }
-
-    &__title {
-        color: #000;
-        font-family: $font-primary;
-        font-size: 45px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 50px;
         margin-top: 54px;
-        margin-bottom: 17px;
-    }
 
-    &__experiencies {
-        display: none;
+        @include responsive($md) {
+            margin-top: 100px;
+            padding-left: 30px;
+            font-size: 50px;
+            width: fit-content;
+            margin-bottom: 0px;
+        }
+
+        @include responsive($xl) {
+            margin-top: 160px;
+            padding-left: 15px;
+            font-size: 90px;
+            width: fit-content;
+            padding-bottom: 75px;
+        }
+
+        br {
+            display: none;
+
+            @include responsive($md) {
+                display: flex;
+            }
+
+            @include responsive($lg) {
+                display: flex;
+            }
+        }
     }
 
     &__subtitle {
@@ -52,6 +147,125 @@
         font-style: normal;
         font-weight: 400;
         line-height: 32px;
-        margin-bottom: 71px;
+       
+        padding-bottom: 10px;
+        display: inline-block;
+        
+        @include responsive($md) {
+            font-size: 26px;
+            margin-left:35px;
+
+        }
+        @include responsive($xl) {
+            padding-top: 170px;
+            font-size: 26px;
+            margin-left: 310px;
+            line-height: 52px;
+            padding-bottom: 139px;
+        }
+    }
+
+    &__email {
+        color: #FF7736;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 38px;
+        text-decoration-line: underline;
+        text-transform: lowercase;
+        padding-left: 85px;
+        padding-bottom: 80px;
+        width: fit-content;
+
+        @include responsive($xl) {
+            padding-left: 21px;
+
+        }
+    }
+
+
+
+
+    &__experiencies {
+        display: none;
+
+        strong {
+            color: #000;
+            font-size: 70px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -9.8px;
+            width: fit-content;
+         
+            @include responsive($xl) {
+                padding-top: 115px;
+                padding-left: 0px;
+
+            }
+
+        }
+
+        @include responsive($xl) {
+            display: flex;
+            padding-left: 10px;
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            width: fit-content;
+        }
+
+        &-description {
+            padding: 20px 20px;
+
+            @include responsive($xl) {
+                padding-top: 140px;
+            }
+        }
+    }
+
+   
+
+    &__subtitle-md{
+
+        @include responsive($md) {
+            color: #25383F;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 46px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            display: inline-block;
+            font-size: 26px;
+            margin-left:35px;
+
+        }
+
+    }
+
+    &__description {
+        width: fit-content;
+
+
+        @include responsive($md) {
+            padding-top: 100px;
+            position: relative;
+            padding-left: 10px;
+            font-size: 26px;
+            margin-left: 600px;
+            width: fit-content;
+        }
+
+        @include responsive($xl) {
+            position: relative;
+            padding-left: 10px;
+            font-size: 26px;
+            margin-left: 480px;
+            width: fit-content;
+
+        }
     }
 }

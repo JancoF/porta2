@@ -1,26 +1,61 @@
 .experience {
-    background-color: #F8F7F1 ;
+    background-color: #F8F7F1;
 
     &__title {
         text-align: center;
         color: #000;
-        font-size: 35px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 16px;
+        padding-bottom: 22px;
 
         @include responsive ($md) {
             font-size: 70px;
         }
-
-
     }
 
-   
+    &__company {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &-name {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding-bottom: 7px;
+        }
+
+        @include responsive($lg) {
+            font-size: 30px;
+            padding-bottom: 15px;
+        }
+
+        &-date {
+            color: #000;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+            padding-bottom: 2px;
+
+            @include responsive($lg) {
+                font-size: 20px;
+                padding-bottom: 131px;
+            }
+        }
+    }
+
 
     &__timeline {
-        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
         &-wrapper-squere {
             width: 36px;
             height: 36px;
@@ -30,41 +65,77 @@
             justify-content: center;
             align-items: center;
 
+            @include responsive($lg) {
+                width: 76px;
+                height: 76px;
+            }
 
             &-icons {
                 width: 12px;
                 height: 12px;
                 background-color: #1E7436;
                 border-radius: 50%;
-                
+
+                @include responsive($lg) {
+                    width: 40px;
+                    height: 40px;
+                }
             }
         }
 
-        &-divisor{
+        &-divisor {
+            border-width:0  0 0 1px;
+            border-spacing: 800px;
+            height: 203px;
+            border-style: dashed ;
+       
+           
+            @include responsive($lg) {
+                height: 124px;
             
-            width: 1px;
-            height: 176px;
-            border: 1px dashed black;
-            
-
-        }  
+            }
+        }
     }
 
     &__position {
         display: flex;
         flex-direction: column;
         gap: 8px;
-        
+
+        &-name {
+            color: #000;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        &-description {
+            color: #000;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px;
+
+
+        }
+
+        &-company {
+            color: #000;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding-bottom: 4px;
+        }
+
+        &-date {
+            color: #000;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+
+        }
     }
-
-    &__name {
-        color: #000;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        
-
-    }
-
 }
