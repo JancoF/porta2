@@ -12,7 +12,7 @@ export default function Footer() {
 
           <section className='col-12 col-md-6 col-lg-6 col-xl-6  '>
             <h5 className='footer__item-title'>Information</h5>
-            <p className='footer__item-subtitle'> <small>  Cancún, Quintana Roo. Mex.</small> </p>
+            <p className='footer__item-subtitle'> <small>Arequipa, Perú</small> </p>
             <ul className='footer__item-list'>
               <li className='footer__item-list-listing'> Services</li>
               <li className='footer__item-list-listing'> Proyectos </li>

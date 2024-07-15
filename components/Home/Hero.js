@@ -16,7 +16,7 @@ export default function Hero() {
           <h1 className='hero__title'>Hey There, <br/>I’m Noe </h1>
           <p className='hero__subtitle-md d-none d-md-block d-lg-none  '>I design beautifully simple <br />  things, And I love what i do</p>
 
-          <Link href='/' className='d-none d-lg-block  hero__email'>jonatanare.dev@gmail.com</Link>
+          <Link href='/' className='d-none d-lg-block  hero__email'>noe.flores.code@gmail.com</Link>
           <div className='hero__experiencies'>
             <strong>3</strong>
             <p className='hero__experiencies-description'>Years <br/> Experiences</p>

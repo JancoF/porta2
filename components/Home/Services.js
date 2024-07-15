@@ -4,7 +4,7 @@ const services = [
   {
     id: 1,
     name: 'Web Development',
-    numberProjects: 20,
+    numberProjects: 10,
     icon: 'icon-dev.svg',
     wrapperIconColor: '#00D394'
 
@@ -12,7 +12,7 @@ const services = [
   {
     id: 2,
     name: 'Diseño UX/UI',
-    numberProjects: 12,
+    numberProjects: 5,
     icon: 'icon-diseno-ux-ui.svg',
     wrapperIconColor: '#2DC9FF'
 
@@ -20,7 +20,7 @@ const services = [
   {
     id: 3,
     name: 'Marketing Digital',
-    numberProjects: 54,
+    numberProjects: 15,
     icon: 'Group 14.svg',
     wrapperIconColor: '#FFA71C'
 
