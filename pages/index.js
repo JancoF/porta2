@@ -6,13 +6,12 @@ import Testimonials from '@/components/Home/Testimonials'
 import Projects from '@/components/Home/Projects'
 export default function Home() {
   return (
-    <Layout title='Home' description={'Descripcionhome'}>
+    <Layout title='Noe - dev' description={'Descripcionhome'}>
       <main>
         <Hero />
         <Services />
         <Experience />
         <Projects />
-        <Testimonials />
       </main>
     </Layout>
   )

@@ -1,4 +1,6 @@
+import Image from 'next/image'
 import React from 'react'
+
 
 const services = [
   {
@@ -37,8 +39,14 @@ export default function Services() {
               {
                 services.map((service) => (
                   <section key={service.id} className='services__item'>
-                    <figure className='services__item-wrapper-icon' style={{backgroundColor: service.wrapperIconColor}}>
-                      <img src={`/assets/icons/${service.icon}`} alt={`Icon ${service.name}`} className='services__item-icon' />
+                    <figure className='services__item-wrapper-icon' style={{ backgroundColor: service.wrapperIconColor }}>
+                      <Image
+                        src={`/assets/icons/${service.icon}`}
+                        alt={`Icon ${service.name}`}
+                        width={24}  
+                        height={24} 
+                        className='services__item-icon'
+                      />
                     </figure>
                     <div>
                       <h3 className='services__item-title'>{service.name}</h3>
@@ -66,7 +74,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      
+
     </section>
   )
 }

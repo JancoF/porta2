@@ -13,7 +13,7 @@ export default function Layout({ children, title, description }) {
         <title>{title} </title>
         <meta name='description' content={description} />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/cielo.ico' />
+        <link rel='icon' href='/code.png' />
       </Head>
       <Nav />
       {children}
