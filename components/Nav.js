@@ -25,7 +25,7 @@ export default function Nav() {
             <li className=' nav-item pt-2  d-flex align-items-center'>
               <Link className='nav-link navs__wrap-itms-title m-3' href='/'> +51 926 918 999</Link>
               <div className="col navs__wrap-what">
-                <Image src={'/assets/icons/whatsapp.webp'} width={27} height={27} alt='Whastapp' className="navs__whatsapp"/>
+                <Image src={'/assets/icons/whatsapp.png'} width={27} height={27} alt='Whastapp' className="navs__whatsapp"/>
               </div>
             </li>
           </ul>
